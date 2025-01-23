@@ -8,14 +8,14 @@
 /* From <sys/kern_control.h> */
 #define CTLIOCGINFO 0xc0644e03UL
 struct ctl_info {
-    int         ctl_id;
+    u_int32_t   ctl_id;
     char        ctl_name[96];
 };
 struct sockaddr_ctl {
-    char      sc_len;
-    char      sc_family;
-    int       ss_sysaddr;
-    int       sc_id;
-    int       sc_unit;
-    int       sc_reserved[5];
+    u_char      sc_len;
+    u_char      sc_family;
+    u_int16_t   ss_sysaddr;
+    u_int32_t   sc_id;
+    u_int32_t   sc_unit;
+    u_int32_t   sc_reserved[5];
 };
