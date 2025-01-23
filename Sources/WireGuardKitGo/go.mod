@@ -3,7 +3,7 @@ module github.com/kterentev/wireguard-apple
 go 1.17
 
 require (
-	github.com/kterentev/wireguard-go v0.0.0-20240811060901-b557508470d9
+	github.com/kterentev/wireguard-go v0.0.0-20250123172533-fe1aecb0f920
 	golang.org/x/sys v0.12.0
 )
 
